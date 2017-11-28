@@ -2063,6 +2063,8 @@ extern const u8g_fntpgm_uint8_t u8g_font_profont22r[] U8G_FONT_SECTION("u8g_font
 extern const u8g_fntpgm_uint8_t u8g_font_profont29[] U8G_FONT_SECTION("u8g_font_profont29");
 extern const u8g_fntpgm_uint8_t u8g_font_profont29r[] U8G_FONT_SECTION("u8g_font_profont29r");
 
+/* liquid font gdzhang add */
+extern const u8g_fntpgm_uint8_t u8g_font_liquid[1693] U8G_FONT_SECTION("u8g_font_liquid");
 
 #ifdef __cplusplus
 }

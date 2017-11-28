@@ -9,7 +9,9 @@
 #define U8G_FONT_TABLE_ENTRY(font)
 #define U8G_FONT_TABLE                          \
     U8G_FONT_TABLE_ENTRY(font_6x10)             \
-    U8G_FONT_TABLE_ENTRY(font_chikita)
+    U8G_FONT_TABLE_ENTRY(font_chikita)          \
+    U8G_FONT_TABLE_ENTRY(font_profont17)        \
+    U8G_FONT_TABLE_ENTRY(font_liquid)           
 #undef U8G_FONT_TABLE_ENTRY
 //
 // ***************************************************************************
@@ -35,6 +37,7 @@
 #define U8G_DISPLAY_TABLE_ENTRY(device)
 #define U8G_DISPLAY_TABLE_I2C                           \
     U8G_DISPLAY_TABLE_ENTRY(ssd1306_128x64_i2c)         \
+    U8G_DISPLAY_TABLE_ENTRY(sh1106_128x64_i2c)          \
 
 // SPI based displays go into here:
 //    U8G_DISPLAY_TABLE_ENTRY(ld7032_60x32_hw_spi)                \
