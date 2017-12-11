@@ -7,6 +7,7 @@ THIS_DIR:=$(abspath $(dir $(lastword $(MAKEFILE_LIST))))
 IDF_PATH=$(THIS_DIR)/sdk/esp32-esp-idf
 all:
 %:
+	@BUILD_DATE=`date +%Y%m%d%H%M%S` ; echo BUILD_DATE:$${BUILD_DATE}; sed -i "s/#define BUILD_DATE.*$$/#define BUILD_DATE	\"gdzhang-$${BUILD_DATE}\"/g" components/platform/include/user_version.h
 	@echo Setting IDF_PATH and re-invoking...
 	@env IDF_PATH=$(IDF_PATH) PATH=$(PATH):$(THIS_DIR)/tools/toolchains/esp32/bin/ $(MAKE) -f $(THIS_MK_FILE) $@
 

@@ -8,7 +8,7 @@
 
 #define NODE_VERSION	"NodeMCU ESP32"
 #ifndef BUILD_DATE
-#define BUILD_DATE	  "unspecified"
+#define BUILD_DATE	"gdzhang-20171211173925"
 #endif
 
 #define SDK_VERSION "IDF"
