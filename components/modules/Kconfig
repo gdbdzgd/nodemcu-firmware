@@ -180,7 +180,14 @@ config LUA_MODULE_WS2812
   help
       Includes the ws2812 module.
 
+config LUA_MODULE_RTCTIME
+  bool "RTCTIME module"
+  default "n"
+  help
+      Includes the RTCTIME module.
+
 config LUA_MODULE_SNTP
+  depends on LUA_MODULE_RTCTIME
   bool "SNTP module"
   default "n"
   help
